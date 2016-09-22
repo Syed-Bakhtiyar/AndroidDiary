@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.syedinkisarahmed.randomfiling.MainActivity">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:paddingLeft="8dp"
+        android:textSize="25sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter File Name: "
+        android:id="@+id/first"/>
+    <EditText
+        android:paddingTop="8dp"
+        android:layout_marginRight="6dp"
+        android:layout_width="wrap_content"
+        android:hint="Enter Here"
+        android:id="@+id/editFirst"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/first"
+        />
+</LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp">
+    <Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ok"
+        android:layout_marginRight="16dp"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:onClick="createFile"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp">
+        <TextView
+            android:paddingLeft="8dp"
+            android:textSize="25sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Salling: "
+            android:id="@+id/rec"/>
+        <EditText
+            android:paddingTop="8dp"
+            android:layout_marginRight="6dp"
+            android:layout_width="wrap_content"
+            android:hint="Enter Here"
+            android:id="@+id/EditFirstRec"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/first"
+            />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Write"
+            android:layout_marginRight="16dp"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:onClick="write"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TotalSale"
+            android:textStyle="bold"
+            android:onClick="totalSale"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:id="@+id/tsale"
+            android:text="0"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Read"
+        android:layout_centerHorizontal="true"
+        android:onClick="read"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/readText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>
